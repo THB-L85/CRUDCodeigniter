@@ -1,0 +1,59 @@
+CRITICAL - 2022-12-05 15:53:28 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\crud\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\crud\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\crud\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\crud\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-12-05 16:05:33 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\crud\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\crud\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\crud\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\crud\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-12-05 16:05:34 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\crud\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\crud\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\crud\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\crud\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+ERROR - 2022-12-05 09:17:32 --> Error connecting to the database: Unknown database 'crudalbumes'
+CRITICAL - 2022-12-05 09:17:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'crudalbumes'
+#0 C:\xampp\htdocs\crud\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\crud\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\crud\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\crud\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\crud\app\Controllers\Albumes.php(9): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\crud\system\CodeIgniter.php(832): App\Controllers\Albumes->index()
+#6 C:\xampp\htdocs\crud\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Albumes))
+#7 C:\xampp\htdocs\crud\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crud\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-12-05 09:20:01 --> Error connecting to the database: Unknown database 'crudalbumes'
+CRITICAL - 2022-12-05 09:20:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'crudalbumes'
+#0 C:\xampp\htdocs\crud\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\crud\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\crud\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\crud\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\crud\app\Controllers\Genres.php(9): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\crud\system\CodeIgniter.php(832): App\Controllers\Genres->index()
+#6 C:\xampp\htdocs\crud\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genres))
+#7 C:\xampp\htdocs\crud\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crud\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-12-05 13:07:47 --> Cannot add or update a child row: a foreign key constraint fails (`crudalbums`.`albums`, CONSTRAINT `genre_inter_relational_constraint` FOREIGN KEY (`genre_id`) REFERENCES `genres` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+CRITICAL - 2022-12-05 13:07:47 --> Cannot add or update a child row: a foreign key constraint fails (`crudalbums`.`albums`, CONSTRAINT `genre_inter_relational_constraint` FOREIGN KEY (`genre_id`) REFERENCES `genres` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 C:\xampp\htdocs\crud\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `al...', 0)
+#1 C:\xampp\htdocs\crud\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `al...')
+#2 C:\xampp\htdocs\crud\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `al...')
+#3 C:\xampp\htdocs\crud\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `al...', Array, false)
+#4 C:\xampp\htdocs\crud\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\crud\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\crud\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\crud\app\Controllers\Albumes.php(26): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\crud\system\CodeIgniter.php(832): App\Controllers\Albumes->guardar()
+#9 C:\xampp\htdocs\crud\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Albumes))
+#10 C:\xampp\htdocs\crud\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\crud\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
